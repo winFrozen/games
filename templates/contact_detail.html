@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+      <h1 class="testimonial_text">Testimonial</h1>
+      <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+      <div class="testimonial_section_2">
+        <div class="box_main">
+          <div class="quote_icon"><img src="{% static 'images/quote-icon.png' %}"></div>
+          <p class="dolor_text">{{ Client.comment }}</p>
+          <div class="client_main">
+            <div class="client_left">
+              <div class="images_5"><img src={{Client.img.url}}></div>
+            </div>
+            <div class="client_right">
+              <h1 class="sandy_text">{{ Client.name }}</h1>
+              <p class="sandy_text_1">{{ Client.who }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="see_main">
+      </div>
+    </div>
+{% endblock %}
